@@ -40,6 +40,7 @@
 
         <hr>
         <h3>Creating table that contain cities which are recommended to visit</h3>
+        <p>The below table decribes the famous locations in cities that have to be visited</p>
         <table>
             <tr>
                 <th>Name of the City</th>
@@ -68,6 +69,23 @@
             </tr>
         </table>
 
+        <hr>
+        <h3>Exercie to Block quote</h3>
+        <blockquote cite="https://stackoverflow.com/search?q=Add%2Fremove+contact+info+fields">Add/Remove fields from About Yourself section of Wordpress Author Profile</blockquote>
 
+        <a href="https://stackoverflow.com/search?q=Add%2Fremove+contact+info+fields">Click here for quic link to source</a>
+
+        <pre>
+            function new_contactmethods( $contactmethods ) {
+                $contactmethods['twitter'] = 'Twitter'; // Add Twitter
+                $contactmethods['facebook'] = 'Facebook'; // Add Facebook
+                unset($contactmethods['yim']); // Remove YIM
+                unset($contactmethods['aim']); // Remove AIM
+                unset($contactmethods['jabber']); // Remove Jabber
+             
+                return $contactmethods;
+             }
+        </pre>
+    
     </body>
 </html>
